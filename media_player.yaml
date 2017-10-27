@@ -1,0 +1,18 @@
+ - platform: webostv
+   host: 192.168.1.41
+   name: Living Room TV
+   timeout: 5
+   filename: webostv.conf
+   turn_on_action:
+     service: switch.turn_on
+     entity_id: switch.living_room_tv
+   customize:
+     sources:
+       - livetv
+       - Virgin
+       - Apple TV
+       - netflix
+ - platform: tivo
+   host: 192.168.1.42
+   port: 31339
+   name: Living Room TiVo

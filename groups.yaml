@@ -1,0 +1,64 @@
+power_view:
+  name: "Power"
+  view: true
+  entities:
+    - group.power
+
+climate_view:
+  name: "Climate"
+  view: true
+  entities:
+    - group.climate
+    - group.climate_battery
+
+living_room:
+  name: "Living Room"
+  entities:
+    - media_player.living_room_tv
+    - media_player.living_room_tivo
+    - media_player.living_room_apple_tv
+    - sensor.living_room_temperature
+    - sensor.living_room_humidity
+
+bedroom:
+  name: "Bedroom"
+  entities:
+    - media_player.bedroom_apple_tv
+    - sensor.bedroom_temperature
+    - sensor.bedroom_humidity
+
+family:
+  name: "Family"
+  entities:
+    - device_tracker.matt_galloways_iphone
+
+power:
+  name: "Power monitoring"
+  entities:
+    - sensor.power_usage
+    - sensor.solar_generation
+    - sensor.immersion
+    - sensor.vrms
+
+hwt:
+  name: "Hot water tank"
+  entities:
+    - sensor.hwt_bottom
+    - sensor.hwt_top
+
+climate:
+  name: "Climate"
+  entities:
+    - sensor.living_room_temperature
+    - sensor.living_room_humidity
+    - sensor.bedroom_temperature
+    - sensor.bedroom_humidity
+    - sensor.hwt_ambient
+    - sensor.hwt_humidity
+
+climate_battery:
+  name: "Climate (battery)"
+  entities:
+    - sensor.emonth5_battery
+    - sensor.emonth6_battery
+    - sensor.emonth7_battery

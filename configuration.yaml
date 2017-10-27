@@ -1,0 +1,40 @@
+homeassistant:
+  name: 28 Fieldway
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+  elevation: !secret home_elevation
+  unit_system: metric
+  time_zone: Europe/London
+  customize: !include customize.yaml
+
+http:
+  api_password: !secret http_password
+  trusted_networks: !secret trusted_networks
+  #ssl_certificate: !secret ssl_certificate
+  #ssl_key: !secret ssl_key
+  #base_url: !secret base_url
+
+frontend:
+config:
+updater:
+discovery:
+conversation:
+history:
+logbook:
+map:
+sun:
+ios:
+tts:
+  - platform: google
+
+mqtt:
+  !secret mqtt
+
+media_player: !include media_player.yaml
+switch: !include switch.yaml
+apple_tv: !include apple_tv.yaml
+sensor: !include sensor.yaml
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml

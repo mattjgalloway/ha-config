@@ -1,0 +1,38 @@
+switch.living_room_tv:
+  hidden: true
+
+sun.sun:
+  hidden: true
+
+sensor.power_usage:
+  icon: mdi:power-socket-uk
+sensor.solar_generation:
+  icon: mdi:power-socket-uk
+sensor.immersion:
+  icon: mdi:power-socket-uk
+sensor.vrms:
+  icon: mdi:power-socket-uk
+
+sensor.living_room_temperature:
+  icon: mdi:temperature-celsius
+sensor.living_room_humidity:
+  icon: mdi:water-percent
+sensor.bedroom_temperature:
+  icon: mdi:temperature-celsius
+sensor.bedroom_humidity:
+  icon: mdi:water-percent
+sensor.hwt_bottom:
+  icon: mdi:water
+sensor.hwt_top:
+  icon: mdi:water
+sensor.hwt_ambient:
+  icon: mdi:temperature-celsius
+sensor.hwt_humidity:
+  icon: mdi:water-percent
+
+sensor.emonth5_battery:
+  icon: mdi:battery-90
+sensor.emonth6_battery:
+  icon: mdi:battery-90
+sensor.emonth7_battery:
+  icon: mdi:battery-90

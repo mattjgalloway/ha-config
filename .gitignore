@@ -1,0 +1,14 @@
+lib
+deps
+home-assistant.log
+home-assistant_v2.db
+.uuid
+
+webostv.conf
+*.csr
+*.crt
+*.key
+
+__pycache__
+
+secrets.yaml

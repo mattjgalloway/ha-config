@@ -1,0 +1,10 @@
+ - host: !secret living_room_appletv_host
+   name: "Living Room Apple TV"
+   login_id: !secret living_room_appletv_login_id
+   start_off: true
+   credentials: !secret living_room_appletv_credentials
+ - host: !secret bedroom_appletv_host
+   name: "Bedroom Apple TV"
+   login_id: !secret bedroom_appletv_login_id
+   start_off: true
+   credentials: !secret bedroom_appletv_credentials
