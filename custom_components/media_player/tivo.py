@@ -129,7 +129,7 @@ class TiVoDevice(MediaPlayerDevice):
 
     def _changeChannelWithIRCode(self, code):
         """Change the channel with the given IRCODE."""
-        from python_tivo.response import FullChannelNam
+        from python_tivo.response import FullChannelName
         responses = self._device.sendIRCode(code)
         if len(responses) > 0:
           lastResponse = responses[-1]
