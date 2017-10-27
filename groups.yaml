@@ -31,6 +31,7 @@ family:
   name: "Family"
   entities:
     - device_tracker.matt_galloways_iphone
+    - device_tracker.helen_galloways_iphone
 
 power:
   name: "Power monitoring"
