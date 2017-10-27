@@ -10,9 +10,9 @@ homeassistant:
 http:
   api_password: !secret http_password
   trusted_networks: !secret trusted_networks
-  #ssl_certificate: !secret ssl_certificate
-  #ssl_key: !secret ssl_key
-  #base_url: !secret base_url
+  ssl_certificate: !secret ssl_certificate
+  ssl_key: !secret ssl_key
+  base_url: !secret base_url
 
 frontend:
 config:
