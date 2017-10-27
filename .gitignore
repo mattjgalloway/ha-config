@@ -3,6 +3,8 @@ deps
 home-assistant.log
 home-assistant_v2.db
 .uuid
+.ios.conf
+tts
 
 webostv.conf
 *.csr
