@@ -22,7 +22,6 @@ import os
 import re
 import sys
 import time
-import python_tivo
 
 REQUIREMENTS = ['python-tivo==0.0.1']
 
@@ -53,14 +52,16 @@ class TiVoDevice(MediaPlayerDevice):
 
     def __init__(self, hass, name, host, port):
         """Initialize the device."""
+        from python_tivo import TiVoConnection
         self._hass = hass
         self._name = name
         self._state = STATE_UNKNOWN
         self._channel = None
-        self._device = python_tivo.TiVoConnection(host, port)
+        self._device = TiVoConnection(host, port)
 
     def update(self):
         """Retrieve latest state."""
+        from python_tivo import TiVoError
         try:
           channel = self._device.fetchCurrentChannel()
           self._channel = channel
@@ -69,7 +70,7 @@ class TiVoDevice(MediaPlayerDevice):
             self._state = STATE_OFF
           else:
             self._state = STATE_ON
-        except python_tivo.TiVoError:
+        except TiVoError:
           _LOGGER.error("TiVo failed to update")
           self._state = STATE_UNKNOWN
           self._channel = None
@@ -128,9 +129,10 @@ class TiVoDevice(MediaPlayerDevice):
 
     def _changeChannelWithIRCode(self, code):
         """Change the channel with the given IRCODE."""
+        from python_tivo.response import FullChannelNam
         responses = self._device.sendIRCode(code)
         if len(responses) > 0:
           lastResponse = responses[-1]
-          channel = python_tivo.response.FullChannelName(lastResponse)
+          channel = FullChannelName(lastResponse)
           if channel:
             self._channel = channel
