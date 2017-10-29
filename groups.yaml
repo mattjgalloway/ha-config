@@ -23,6 +23,7 @@ living_room:
 bedroom:
   name: "Bedroom"
   entities:
+    - media_player.bedroom_tv
     - media_player.bedroom_apple_tv
     - sensor.bedroom_temperature
     - sensor.bedroom_humidity
@@ -32,6 +33,16 @@ family:
   entities:
     - device_tracker.matt_galloways_iphone
     - device_tracker.helen_galloways_iphone
+
+mobile_devices:
+  name: "Mobile devices"
+  entities:
+    - sensor.matt_galloways_iphone_battery_level
+    - sensor.matt_galloways_iphone_battery_state
+    - sensor.matt_galloways_ipad_battery_level
+    - sensor.matt_galloways_ipad_battery_state
+    - sensor.helen_galloways_iphone_battery_level
+    - sensor.helen_galloways_iphone_battery_state
 
 power:
   name: "Power monitoring"
