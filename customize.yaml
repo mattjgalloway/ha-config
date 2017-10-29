@@ -36,3 +36,8 @@ sensor.emonth6_battery:
   icon: mdi:battery-90
 sensor.emonth7_battery:
   icon: mdi:battery-90
+
+media_player.living_room_tv:
+  haaska_hidden: false
+media_player.living_room_tivo:
+  haaska_hidden: false
