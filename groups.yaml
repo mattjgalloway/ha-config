@@ -32,6 +32,7 @@ family:
   name: "Family"
   entities:
     - device_tracker.matt_galloways_iphone
+    - device_tracker.matt_galloways_ipad
     - device_tracker.helen_galloways_iphone
 
 mobile_devices:
