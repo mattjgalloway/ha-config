@@ -19,7 +19,7 @@
    name: "HWT bottom"
    unit_of_measurement: "C"
  - platform: mqtt
-   state_topic: "emon/emonth5/external temperature w"
+   state_topic: "emon/emonth5/external temperature 2"
    name: "HWT top"
    unit_of_measurement: "C"
  - platform: mqtt
