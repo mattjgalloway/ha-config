@@ -5,3 +5,5 @@
    turn_off:
      service: media_player.turn_off
      entity_id: media_player.living_room_tv
+ - platform: edimax
+   host: 192.168.1.32
