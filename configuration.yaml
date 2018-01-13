@@ -19,13 +19,20 @@ config:
 updater:
 discovery:
 conversation:
-history:
 logbook:
 map:
 sun:
 ios:
 tts:
   - platform: google
+
+recorder:
+  purge_interval: 1
+  purge_keep_days: 7
+  exclude:
+    domains:
+      - mqtt
+history:
 
 mqtt:
   !secret mqtt
