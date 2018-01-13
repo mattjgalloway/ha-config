@@ -31,8 +31,13 @@ recorder:
   purge_keep_days: 7
   exclude:
     domains:
-      - mqtt
+      - sun
+      - sensor
 history:
+  exclude:
+    domains:
+      - sun
+      - sensor
 
 mqtt:
   !secret mqtt
