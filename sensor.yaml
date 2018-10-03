@@ -1,60 +1,60 @@
- - platform: mqtt
-   state_topic: "emon/emonpi/power1"
-   name: "Power usage"
-   unit_of_measurement: "W"
- - platform: mqtt
-   state_topic: "emon/emonpi/power2"
-   name: "Solar generation"
-   unit_of_measurement: "W"
- - platform: mqtt
-   state_topic: "emon/emontx3/power1"
-   name: "Immersion"
-   unit_of_measurement: "W"
- - platform: mqtt
-   state_topic: "emon/emonpi/vrms"
-   name: "Vrms"
-   unit_of_measurement: "V"
- - platform: mqtt
-   state_topic: "emon/emonth5/external temperature 1"
-   name: "HWT bottom"
-   unit_of_measurement: "C"
- - platform: mqtt
-   state_topic: "emon/emonth5/external temperature 2"
-   name: "HWT top"
-   unit_of_measurement: "C"
- - platform: mqtt
-   state_topic: "emon/emonth5/temperature"
-   name: "HWT ambient"
-   unit_of_measurement: "C"
- - platform: mqtt
-   state_topic: "emon/emonth5/humidity"
-   name: "HWT humidity"
-   unit_of_measurement: "%"
- - platform: mqtt
-   state_topic: "emon/emonth5/battery"
-   name: "emonth5 battery"
-   unit_of_measurement: "V"
- - platform: mqtt
-   state_topic: "emon/emonth6/temperature"
-   name: "Living room temperature"
-   unit_of_measurement: "C"
- - platform: mqtt
-   state_topic: "emon/emonth6/humidity"
-   name: "Living room humidity"
-   unit_of_measurement: "%"
- - platform: mqtt
-   state_topic: "emon/emonth6/battery"
-   name: "emonth6 battery"
-   unit_of_measurement: "V"
- - platform: mqtt
-   state_topic: "emon/emonth7/temperature"
-   name: "Bedroom temperature"
-   unit_of_measurement: "C"
- - platform: mqtt
-   state_topic: "emon/emonth7/humidity"
-   name: "Bedroom humidity"
-   unit_of_measurement: "%"
- - platform: mqtt
-   state_topic: "emon/emonth7/battery"
-   name: "emonth7 battery"
-   unit_of_measurement: "V"
+# - platform: mqtt
+#   state_topic: "emon/emonpi/power1"
+#   name: "Power usage"
+#   unit_of_measurement: "W"
+# - platform: mqtt
+#   state_topic: "emon/emonpi/power2"
+#   name: "Solar generation"
+#   unit_of_measurement: "W"
+# - platform: mqtt
+#   state_topic: "emon/emontx3/power1"
+#   name: "Immersion"
+#   unit_of_measurement: "W"
+# - platform: mqtt
+#   state_topic: "emon/emonpi/vrms"
+#   name: "Vrms"
+#   unit_of_measurement: "V"
+# - platform: mqtt
+#   state_topic: "emon/emonth5/external temperature 1"
+#   name: "HWT bottom"
+#   unit_of_measurement: "C"
+# - platform: mqtt
+#   state_topic: "emon/emonth5/external temperature 2"
+#   name: "HWT top"
+#   unit_of_measurement: "C"
+# - platform: mqtt
+#   state_topic: "emon/emonth5/temperature"
+#   name: "HWT ambient"
+#   unit_of_measurement: "C"
+# - platform: mqtt
+#   state_topic: "emon/emonth5/humidity"
+#   name: "HWT humidity"
+#   unit_of_measurement: "%"
+# - platform: mqtt
+#   state_topic: "emon/emonth5/battery"
+#   name: "emonth5 battery"
+#   unit_of_measurement: "V"
+# - platform: mqtt
+#   state_topic: "emon/emonth6/temperature"
+#   name: "Living room temperature"
+#   unit_of_measurement: "C"
+# - platform: mqtt
+#   state_topic: "emon/emonth6/humidity"
+#   name: "Living room humidity"
+#   unit_of_measurement: "%"
+# - platform: mqtt
+#   state_topic: "emon/emonth6/battery"
+#   name: "emonth6 battery"
+#   unit_of_measurement: "V"
+# - platform: mqtt
+#   state_topic: "emon/emonth7/temperature"
+#   name: "Bedroom temperature"
+#   unit_of_measurement: "C"
+# - platform: mqtt
+#   state_topic: "emon/emonth7/humidity"
+#   name: "Bedroom humidity"
+#   unit_of_measurement: "%"
+# - platform: mqtt
+#   state_topic: "emon/emonth7/battery"
+#   name: "emonth7 battery"
+#   unit_of_measurement: "V"
