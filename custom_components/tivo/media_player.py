@@ -5,15 +5,19 @@ TiVo support for Home Assistant
 import voluptuous as vol
 
 from homeassistant.components.media_player import (
+    PLATFORM_SCHEMA,
+    MediaPlayerDevice
+)
+from homeassistant.components.media_player.const import (
     MEDIA_TYPE_CHANNEL,
     SUPPORT_TURN_ON,
     SUPPORT_TURN_OFF,
     SUPPORT_NEXT_TRACK,
-    SUPPORT_PREVIOUS_TRACK,
-    PLATFORM_SCHEMA,
-    MediaPlayerDevice)
+    SUPPORT_PREVIOUS_TRACK
+)
 from homeassistant.const import (
-    CONF_HOST, CONF_PORT, CONF_NAME, STATE_OFF, STATE_ON, STATE_UNKNOWN)
+    CONF_HOST, CONF_PORT, CONF_NAME, STATE_OFF, STATE_ON, STATE_UNKNOWN
+)
 import homeassistant.helpers.config_validation as cv
 
 import logging
