@@ -1,35 +1,40 @@
-power_view:
-  name: "Power"
-  view: true
-  entities:
-    - group.power
-
-climate_view:
-  name: "Climate"
-  view: true
-  entities:
-    - group.climate
-    - group.climate_battery
+#power_view:
+#  name: "Power"
+#  view: true
+#  control: hidden
+#  entities:
+#    - group.power
+#
+#climate_view:
+#  name: "Climate"
+#  view: true
+#  control: hidden
+#  entities:
+#    - group.climate
+#    - group.climate_battery
 
 living_room:
   name: "Living Room"
+  control: hidden
   entities:
     - media_player.living_room_tv
     - media_player.living_room_tivo
     - media_player.living_room_apple_tv
-    - sensor.living_room_temperature
-    - sensor.living_room_humidity
+#    - sensor.living_room_temperature
+#    - sensor.living_room_humidity
 
 bedroom:
   name: "Bedroom"
+  control: hidden
   entities:
     - media_player.bedroom_tv
     - media_player.bedroom_apple_tv
-    - sensor.bedroom_temperature
-    - sensor.bedroom_humidity
+#    - sensor.bedroom_temperature
+#    - sensor.bedroom_humidity
 
 family:
   name: "Family"
+  control: hidden
   entities:
     - device_tracker.matt_galloways_iphone
     - device_tracker.matt_galloways_ipad
@@ -37,6 +42,7 @@ family:
 
 mobile_devices:
   name: "Mobile devices"
+  control: hidden
   entities:
     - sensor.matt_galloways_iphone_battery_level
     - sensor.matt_galloways_iphone_battery_state
@@ -45,33 +51,37 @@ mobile_devices:
     - sensor.helen_galloways_iphone_battery_level
     - sensor.helen_galloways_iphone_battery_state
 
-power:
-  name: "Power monitoring"
-  entities:
-    - sensor.power_usage
-    - sensor.solar_generation
-    - sensor.immersion
-    - sensor.vrms
-
-hwt:
-  name: "Hot water tank"
-  entities:
-    - sensor.hwt_bottom
-    - sensor.hwt_top
-
-climate:
-  name: "Climate"
-  entities:
-    - sensor.living_room_temperature
-    - sensor.living_room_humidity
-    - sensor.bedroom_temperature
-    - sensor.bedroom_humidity
-    - sensor.hwt_ambient
-    - sensor.hwt_humidity
-
-climate_battery:
-  name: "Climate (battery)"
-  entities:
-    - sensor.emonth5_battery
-    - sensor.emonth6_battery
-    - sensor.emonth7_battery
+#power:
+#  name: "Power monitoring"
+#  control: hidden
+#  entities:
+#    - sensor.power_usage
+#    - sensor.solar_generation
+#    - sensor.immersion
+#    - sensor.vrms
+#
+#hwt:
+#  name: "Hot water tank"
+#  control: hidden
+#  entities:
+#    - sensor.hwt_bottom
+#    - sensor.hwt_top
+#
+#climate:
+#  name: "Climate"
+#  control: hidden
+#  entities:
+#    - sensor.living_room_temperature
+#    - sensor.living_room_humidity
+#    - sensor.bedroom_temperature
+#    - sensor.bedroom_humidity
+#    - sensor.hwt_ambient
+#    - sensor.hwt_humidity
+#
+#climate_battery:
+#  name: "Climate (battery)"
+#  control: hidden
+#  entities:
+#    - sensor.emonth5_battery
+#    - sensor.emonth6_battery
+#    - sensor.emonth7_battery
