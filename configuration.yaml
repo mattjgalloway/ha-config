@@ -24,7 +24,8 @@ map:
 sun:
 ios:
 tts:
-  - platform: google
+  - platform: google_translate
+    service_name: google_say
 
 recorder:
   purge_interval: 1
