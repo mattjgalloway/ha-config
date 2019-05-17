@@ -1,0 +1,10 @@
+{
+  "domain": "tivo",
+  "name": "TiVo",
+  "documentation": "",
+  "requirements": [
+    "python-tivo==0.0.1"
+  ],
+  "dependencies": ["configurator"],
+  "codeowners": []
+}
