@@ -26,6 +26,8 @@ ios:
 tts:
   - platform: google_translate
     service_name: google_say
+alexa:
+  smart_home:
 
 recorder:
   purge_interval: 1
