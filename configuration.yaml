@@ -28,6 +28,15 @@ tts:
     service_name: google_say
 alexa:
   smart_home:
+    filter:
+      exclude_entities:
+        - group.all_remotes
+        - group.all_devices
+        - group.all_switches
+        - group.living_room
+        - group.bedroom
+        - group.family
+        - group.mobile_devices
 
 recorder:
   purge_interval: 1
