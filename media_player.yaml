@@ -4,8 +4,9 @@
    timeout: 5
    filename: webostv.conf
    turn_on_action:
-     service: switch.turn_on
-     entity_id: switch.living_room_tv
+     service: wake_on_lan.send_magic_packet
+     data:
+       mac: "38:8c:50:6a:ee:71"
    customize:
      sources:
        - livetv
