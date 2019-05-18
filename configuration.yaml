@@ -23,6 +23,7 @@ logbook:
 map:
 sun:
 ios:
+wake_on_lan:
 tts:
   - platform: google_translate
     service_name: google_say
