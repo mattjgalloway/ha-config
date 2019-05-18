@@ -74,7 +74,7 @@ class TiVoDevice(MediaPlayerDevice):
             self._state = STATE_OFF
           else:
             self._state = STATE_ON
-        except TiVoError:
+        except (TiVoError, TiVoSocketError) as e:
           _LOGGER.error("TiVo failed to update")
           self._state = STATE_UNKNOWN
           self._channel = None
