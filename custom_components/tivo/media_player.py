@@ -65,7 +65,7 @@ class TiVoDevice(MediaPlayerDevice):
 
     def update(self):
         """Retrieve latest state."""
-        from python_tivo import TiVoError
+        from python_tivo import TiVoError, TiVoSocketError
         try:
           channel = self._device.fetchCurrentChannel()
           self._channel = channel
