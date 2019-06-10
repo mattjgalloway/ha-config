@@ -21,3 +21,4 @@
    host: 192.168.1.45
    mac: 50:56:BF:DD:C4:13
    name: Bedroom TV
+ - platform: plex
