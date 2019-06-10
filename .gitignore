@@ -8,6 +8,7 @@ home-assistant_v2.db-wal
 .ios.conf
 tts
 .storage
+plex.conf
 
 webostv.conf
 *.csr
