@@ -56,8 +56,8 @@ history:
       - sun
       - sensor
 
-#mqtt:
-#  !secret mqtt
+mqtt:
+  !secret mqtt
 
 media_player: !include media_player.yaml
 switch: !include switch.yaml
