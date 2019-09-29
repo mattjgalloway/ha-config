@@ -1,5 +1,6 @@
  - platform: edimax
    host: 192.168.1.32
+   name: "Rosie Lamp"
 
 # Teckin plugs
 # - platform: mqtt
@@ -41,15 +42,15 @@
 #   payload_not_available: "Offline"
 #   retain: false
 
- - platform: mqtt
-   name: "Rosie Lamp"
-   state_topic: "stat/sonoff_4/RESULT"
-   value_template: "{{ value_json.POWER }}"
-   command_topic: "cmnd/sonoff_4/POWER"
-   availability_topic: "tele/sonoff/LWT"
-   qos: 1
-   payload_on: "ON"
-   payload_off: "OFF"
-   payload_available: "Online"
-   payload_not_available: "Offline"
-   retain: false
+# - platform: mqtt
+#   name: "Teckin 4"
+#   state_topic: "stat/sonoff_4/RESULT"
+#   value_template: "{{ value_json.POWER }}"
+#   command_topic: "cmnd/sonoff_4/POWER"
+#   availability_topic: "tele/sonoff/LWT"
+#   qos: 1
+#   payload_on: "ON"
+#   payload_off: "OFF"
+#   payload_available: "Online"
+#   payload_not_available: "Offline"
+#   retain: false
