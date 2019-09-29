@@ -1,7 +1,7 @@
  - platform: edimax
    host: 192.168.1.32
 
-# Teckon plugs
+# Teckin plugs
 # - platform: mqtt
 #   name: "Teckin 1"
 #   state_topic: "stat/sonoff_1/RESULT"
