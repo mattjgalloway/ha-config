@@ -14,8 +14,10 @@ homeassistant:
       api_password: !secret http_password
 
 http:
-  ssl_certificate: !secret ssl_certificate
-  ssl_key: !secret ssl_key
+#  ssl_certificate: !secret ssl_certificate
+#  ssl_key: !secret ssl_key
+  server_host: !secret server_host
+  server_port: !secret server_port
   base_url: !secret base_url
 
 frontend:
@@ -56,8 +58,8 @@ history:
       - sun
       - sensor
 
-mqtt:
-  !secret mqtt
+#mqtt:
+#  !secret mqtt
 
 media_player: !include media_player.yaml
 switch: !include switch.yaml
