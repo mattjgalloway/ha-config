@@ -1,12 +1,12 @@
- - alias: "Power state on HA start-up"
-   trigger:
-     platform: homeassistant
-     event: start
-   action:
-     - service: mqtt.publish
-       data:
-         topic: "cmnd/sonoffs/state"
-         payload: ""
-     - service: mqtt.publish
-       data:
-         topic: "cmnd/sonoffs/POWER"
+# - alias: "Power state on HA start-up"
+#   trigger:
+#     platform: homeassistant
+#     event: start
+#   action:
+#     - service: mqtt.publish
+#       data:
+#         topic: "cmnd/sonoffs/state"
+#         payload: ""
+#     - service: mqtt.publish
+#       data:
+#         topic: "cmnd/sonoffs/POWER"
