@@ -36,7 +36,10 @@ tts:
 alexa:
   smart_home:
     filter:
+      exclude_domains:
+        - automation
       exclude_entities:
+        - group.all_automations
         - group.all_remotes
         - group.all_devices
         - group.all_switches
@@ -44,6 +47,7 @@ alexa:
         - group.bedroom
         - group.family
         - group.mobile_devices
+        - binary_sensor.updater
 
 recorder:
   purge_interval: 1
