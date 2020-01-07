@@ -29,6 +29,7 @@ logbook:
 map:
 sun:
 ios:
+mobile_app:
 wake_on_lan:
 tts:
   - platform: google_translate
