@@ -1,6 +1,6 @@
- - platform: edimax
-   host: 192.168.1.32
-   name: "Rosie Lamp"
+# - platform: edimax
+#   host: 192.168.1.32
+#   name: "Edimax 1"
 
 # Teckin plugs
 # - platform: mqtt
@@ -8,33 +8,43 @@
 #   state_topic: "stat/sonoff_1/RESULT"
 #   value_template: "{{ value_json.POWER }}"
 #   command_topic: "cmnd/sonoff_1/POWER"
-#   availability_topic: "tele/sonoff/LWT"
+#   availability_topic: "tele/sonoff_1/LWT"
 #   qos: 1
 #   payload_on: "ON"
 #   payload_off: "OFF"
 #   payload_available: "Online"
 #   payload_not_available: "Offline"
 #   retain: false
-
 # - platform: mqtt
 #   name: "Teckin 2"
 #   state_topic: "stat/sonoff_2/RESULT"
 #   value_template: "{{ value_json.POWER }}"
 #   command_topic: "cmnd/sonoff_2/POWER"
-#   availability_topic: "tele/sonoff/LWT"
+#   availability_topic: "tele/sonoff_2/LWT"
 #   qos: 1
 #   payload_on: "ON"
 #   payload_off: "OFF"
 #   payload_available: "Online"
 #   payload_not_available: "Offline"
 #   retain: false
-
 # - platform: mqtt
 #   name: "Teckin 3"
 #   state_topic: "stat/sonoff_3/RESULT"
 #   value_template: "{{ value_json.POWER }}"
 #   command_topic: "cmnd/sonoff_3/POWER"
-#   availability_topic: "tele/sonoff/LWT"
+#   availability_topic: "tele/sonoff_3/LWT"
+#   qos: 1
+#   payload_on: "ON"
+#   payload_off: "OFF"
+#   payload_available: "Online"
+#   payload_not_available: "Offline"
+#   retain: false
+# - platform: mqtt
+#   name: "Teckin 4"
+#   state_topic: "stat/sonoff_4/RESULT"
+#   value_template: "{{ value_json.POWER }}"
+#   command_topic: "cmnd/sonoff_4/POWER"
+#   availability_topic: "tele/sonoff_4/LWT"
 #   qos: 1
 #   payload_on: "ON"
 #   payload_off: "OFF"
@@ -42,12 +52,49 @@
 #   payload_not_available: "Offline"
 #   retain: false
 
+# 2nice plugs
+ - platform: mqtt
+   name: "Barnaby Lamp"
+   state_topic: "stat/sonoff_5/RESULT"
+   value_template: "{{ value_json.POWER }}"
+   command_topic: "cmnd/sonoff_5/POWER"
+   availability_topic: "tele/sonoff_5/LWT"
+   qos: 1
+   payload_on: "ON"
+   payload_off: "OFF"
+   payload_available: "Online"
+   payload_not_available: "Offline"
+   retain: false
+ - platform: mqtt
+   name: "Rosie Lamp"
+   state_topic: "stat/sonoff_6/RESULT"
+   value_template: "{{ value_json.POWER }}"
+   command_topic: "cmnd/sonoff_6/POWER"
+   availability_topic: "tele/sonoff_6/LWT"
+   qos: 1
+   payload_on: "ON"
+   payload_off: "OFF"
+   payload_available: "Online"
+   payload_not_available: "Offline"
+   retain: false
 # - platform: mqtt
-#   name: "Teckin 4"
-#   state_topic: "stat/sonoff_4/RESULT"
+#   name: "2nice 7"
+#   state_topic: "stat/sonoff_7/RESULT"
 #   value_template: "{{ value_json.POWER }}"
-#   command_topic: "cmnd/sonoff_4/POWER"
-#   availability_topic: "tele/sonoff/LWT"
+#   command_topic: "cmnd/sonoff_7/POWER"
+#   availability_topic: "tele/sonoff_7/LWT"
+#   qos: 1
+#   payload_on: "ON"
+#   payload_off: "OFF"
+#   payload_available: "Online"
+#   payload_not_available: "Offline"
+#   retain: false
+# - platform: mqtt
+#   name: "2nice 8"
+#   state_topic: "stat/sonoff_8/RESULT"
+#   value_template: "{{ value_json.POWER }}"
+#   command_topic: "cmnd/sonoff_8/POWER"
+#   availability_topic: "tele/sonoff_8/LWT"
 #   qos: 1
 #   payload_on: "ON"
 #   payload_off: "OFF"
