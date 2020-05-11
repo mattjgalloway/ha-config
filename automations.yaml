@@ -1,4 +1,4 @@
- - id: Sync Sonoff States
+ - id: sync_sonoff_states
    alias: Sync Sonoff States
    initial_state: true
    trigger:

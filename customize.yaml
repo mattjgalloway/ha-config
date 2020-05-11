@@ -4,6 +4,9 @@ switch.living_room_tv:
 sun.sun:
   hidden: true
 
+automation.sync_sonoff_states:
+  hidden: true
+
 sensor.power_usage:
   icon: mdi:power-socket-uk
 sensor.solar_generation:
