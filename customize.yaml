@@ -7,6 +7,52 @@ sun.sun:
 automation.sync_sonoff_states:
   hidden: true
 
+# Hide iOS sensors
+sensor.floors_ascended:
+  hidden: true
+sensor.activity:
+  hidden: true
+sensor.floors_descended:
+  hidden: true
+sensor.average_active_pace:
+  hidden: true
+sensor.distance:
+  hidden: true
+sensor.steps:
+  hidden: true
+sensor.last_update_trigger:
+  hidden: true
+sensor.battery_level:
+  hidden: true
+sensor.battery_state:
+  hideen: true
+sensor.connection_type:
+  hidden: true
+sensor.geocoded_location:
+  hidden: true
+sensor.sim_1:
+  hidden: true
+sensor.bssid:
+  hidden: true
+sensor.ssid:
+  hidden: true
+sensor.activity_2:
+  hidden: true
+sensor.last_update_trigger_2:
+  hidden: true
+sensor.battery_level_2:
+  hidden: true
+sensor.battery_state_2:
+  hideen: true
+sensor.geocoded_location_2:
+  hidden: true
+sensor.connection_type_2:
+  hidden: true
+sensor.bssid_2:
+  hidden: true
+sensor.ssid_2:
+  hidden: true
+
 sensor.power_usage:
   icon: mdi:power-socket-uk
 sensor.solar_generation:

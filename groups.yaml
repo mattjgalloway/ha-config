@@ -40,17 +40,6 @@ family:
     - device_tracker.matt_galloways_ipad
     - device_tracker.helen_galloways_iphone
 
-mobile_devices:
-  name: "Mobile devices"
-  control: hidden
-  entities:
-    - sensor.matt_galloways_iphone_battery_level
-    - sensor.matt_galloways_iphone_battery_state
-    - sensor.matt_galloways_ipad_battery_level
-    - sensor.matt_galloways_ipad_battery_state
-    - sensor.helen_galloways_iphone_battery_level
-    - sensor.helen_galloways_iphone_battery_state
-
 #power:
 #  name: "Power monitoring"
 #  control: hidden
