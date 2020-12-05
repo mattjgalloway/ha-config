@@ -24,6 +24,8 @@ frontend:
 config:
 updater:
 discovery:
+  ignore:
+    - plex_mediaserver
 conversation:
 logbook:
 map:
