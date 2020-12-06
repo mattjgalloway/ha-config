@@ -1,21 +1,18 @@
 #power_view:
 #  name: "Power"
 #  view: true
-#  control: hidden
 #  entities:
 #    - group.power
 #
 #climate_view:
 #  name: "Climate"
 #  view: true
-#  control: hidden
 #  entities:
 #    - group.climate
 #    - group.climate_battery
 
 living_room:
   name: "Living Room"
-  control: hidden
   entities:
     - media_player.living_room_tv
     - media_player.living_room_tivo
@@ -25,7 +22,6 @@ living_room:
 
 bedroom:
   name: "Bedroom"
-  control: hidden
   entities:
     - media_player.bedroom_tv
     - media_player.bedroom_apple_tv
@@ -34,15 +30,14 @@ bedroom:
 
 family:
   name: "Family"
-  control: hidden
   entities:
+    - person.matt_galloway
     - device_tracker.matt_galloways_iphone
     - device_tracker.matt_galloways_ipad
     - device_tracker.helen_galloways_iphone
 
 #power:
 #  name: "Power monitoring"
-#  control: hidden
 #  entities:
 #    - sensor.power_usage
 #    - sensor.solar_generation
@@ -51,14 +46,12 @@ family:
 #
 #hwt:
 #  name: "Hot water tank"
-#  control: hidden
 #  entities:
 #    - sensor.hwt_bottom
 #    - sensor.hwt_top
 #
 #climate:
 #  name: "Climate"
-#  control: hidden
 #  entities:
 #    - sensor.living_room_temperature
 #    - sensor.living_room_humidity
@@ -69,7 +62,6 @@ family:
 #
 #climate_battery:
 #  name: "Climate (battery)"
-#  control: hidden
 #  entities:
 #    - sensor.emonth5_battery
 #    - sensor.emonth6_battery

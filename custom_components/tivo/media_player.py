@@ -6,7 +6,7 @@ import voluptuous as vol
 
 from homeassistant.components.media_player import (
     PLATFORM_SCHEMA,
-    MediaPlayerDevice
+    MediaPlayerEntity
 )
 from homeassistant.components.media_player.const import (
     MEDIA_TYPE_CHANNEL,
@@ -16,7 +16,7 @@ from homeassistant.components.media_player.const import (
     SUPPORT_PREVIOUS_TRACK
 )
 from homeassistant.const import (
-    CONF_HOST, CONF_PORT, CONF_NAME, STATE_OFF, STATE_ON, STATE_UNKNOWN
+    CONF_HOST, CONF_PORT, CONF_NAME, STATE_OFF, STATE_ON, STATE_PLAYING, STATE_UNKNOWN
 )
 import homeassistant.helpers.config_validation as cv
 
@@ -51,7 +51,7 @@ def setup_platform(hass, config, add_devices, discovery_info=None):
     add_devices([TiVoDevice(hass, name, host, port)])
     return True
 
-class TiVoDevice(MediaPlayerDevice):
+class TiVoDevice(MediaPlayerEntity):
     """Representation of a TiVo device."""
 
     def __init__(self, hass, name, host, port):
@@ -73,7 +73,7 @@ class TiVoDevice(MediaPlayerDevice):
           if channel == None:
             self._state = STATE_OFF
           else:
-            self._state = STATE_ON
+            self._state = STATE_PLAYING
         except (TiVoError, TiVoSocketError) as e:
           _LOGGER.error("TiVo failed to update")
           self._state = STATE_UNKNOWN
@@ -84,7 +84,7 @@ class TiVoDevice(MediaPlayerDevice):
         """Return the name of the device."""
         return self._name
 
-    # MediaPlayerDevice properties and methods
+    # MediaPlayerEntity properties and methods
     @property
     def state(self):
         """Return the state of the device."""
@@ -120,7 +120,7 @@ class TiVoDevice(MediaPlayerDevice):
 
     def turn_on(self):
         """Turn on the media player."""
-        self._state = STATE_ON
+        self._state = STATE_PLAYING
         self._device.setOnState(True)
 
     def media_next_track(self):

@@ -1,24 +1,4 @@
- - platform: webostv
-   host: 192.168.1.41
-   name: Living Room TV
-   timeout: 5
-   filename: webostv.conf
-   turn_on_action:
-     service: wake_on_lan.send_magic_packet
-     data:
-       mac: "38:8c:50:6a:ee:71"
-   customize:
-     sources:
-       - livetv
-       - Virgin
-       - Apple TV
-       - netflix
  - platform: tivo
    host: 192.168.1.42
    port: 31339
    name: Living Room TiVo
- - platform: samsungtv
-   host: 192.168.1.45
-   mac: 50:56:BF:DD:C4:13
-   name: Bedroom TV
-# - platform: plex
