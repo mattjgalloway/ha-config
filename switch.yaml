@@ -78,7 +78,7 @@
    payload_not_available: "Offline"
    retain: false
  - platform: mqtt
-   name: "Entertainment"
+   name: "Christmas tree"
    state_topic: "stat/sonoff_7/RESULT"
    value_template: "{{ value_json.POWER }}"
    command_topic: "cmnd/sonoff_7/POWER"
@@ -89,15 +89,15 @@
    payload_available: "Online"
    payload_not_available: "Offline"
    retain: false
- - platform: mqtt
-   name: "Christmas tree"
-   state_topic: "stat/sonoff_8/RESULT"
-   value_template: "{{ value_json.POWER }}"
-   command_topic: "cmnd/sonoff_8/POWER"
-   availability_topic: "tele/sonoff_8/LWT"
-   qos: 1
-   payload_on: "ON"
-   payload_off: "OFF"
-   payload_available: "Online"
-   payload_not_available: "Offline"
-   retain: false
+# - platform: mqtt
+#   name: "2nice 8"
+#   state_topic: "stat/sonoff_8/RESULT"
+#   value_template: "{{ value_json.POWER }}"
+#   command_topic: "cmnd/sonoff_8/POWER"
+#   availability_topic: "tele/sonoff_8/LWT"
+#   qos: 1
+#   payload_on: "ON"
+#   payload_off: "OFF"
+#   payload_available: "Online"
+#   payload_not_available: "Offline"
+#   retain: false
