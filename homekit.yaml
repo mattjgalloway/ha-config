@@ -1,0 +1,19 @@
+ - name: HA main
+   mode: bridge
+   port: 51827
+   filter:
+     include_domains:
+       - switch
+     include_entities:
+       - media_player.living_room_tivo
+ - name: HA Living Room TV
+   mode: accessory
+   port: 51828
+   filter:
+     include_entities:
+      - media_player.living_room_tv
+   entity_config:
+     media_player.living_room_tv:
+       feature_list:
+         - feature: on_off
+         - feature: toggle_mute
